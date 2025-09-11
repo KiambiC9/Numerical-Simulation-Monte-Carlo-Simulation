@@ -4,7 +4,7 @@
 - **(c)** Repeat using the **explicit GBM solution** for \(S_T\), avoiding discretisation error.
 
 # Task 2
-Additionally, the **generalized Black–Scholes PDE** (with stochastic variance) is derived in LaTeX (`docs/derivation.tex`).
+Additionally, the derivation of **generalized Black–Scholes PDE** (with stochastic variance).
 
 # Task 3
 Euler-Maruyama discretization of Heston Model. 
@@ -23,17 +23,17 @@ It also demonstrates the **control variate method** with a geometric-average str
 
 - **`asian_option_crude.py`**  
   - Simulates asset paths under Geometric Brownian Motion using Euler discretization.  
-  - Estimates the price of an **arithmetic average-strike Asian call option** via crude Monte Carlo.  
+  - Estimates the price of an **arithmetic average-strike Asian call option** via Monte Carlo.  
   - Reports price, standard error, and 95% confidence interval.
 
 - **`asian_option_control_variate.py`**  
-  - Extends the crude estimator by using the **geometric average-strike Asian call** as a control variate.  
+  - Extends the estimator by using the **geometric average-strike Asian call** as a control variate.  
   - Computes the analytic expectation of the geometric option under Black–Scholes.  
   - Estimates the optimal control variate coefficient \( \theta \).  
   - Reports variance reduction, price estimate, and 95% confidence interval.
 
 - **`variance_comparison.py`**  
-  - Compares crude MC vs control variate in terms of variance and accuracy.  
+  - Compares MC vs control variate in terms of variance and accuracy.  
   - Computes the **percentage variance reduction**:
     \[
     \text{Reduction} = \frac{\text{Var}_{crude} - \text{Var}_{CV}}{\text{Var}_{crude}} \times 100
