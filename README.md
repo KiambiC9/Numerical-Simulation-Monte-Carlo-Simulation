@@ -47,31 +47,7 @@ It also demonstrates the **control variate method** with a geometric-average str
   - Generates plots showing how **confidence intervals shrink** with larger \(M\).  
   - Demonstrates the **efficiency of the control variate method**.
 
----
-
-## ⚙️ Parameters Used
-
-Default setup in scripts:
-- Initial stock price `S0 = 100`  
-- Risk-free rate `r = 0.05`  
-- Volatility `σ = 0.2`  
-- Maturity `T = 1` year  
-- Monitoring points `N = 50`  
-- Simulations `M = 100000`  
-
----
-
 ## 📈 Results Summary
-
-- **Crude Monte Carlo**:  
-  - Estimate ≈ 5.76  
-  - 95% CI ≈ [5.71, 5.81]  
-  - Variance ≈ 7.0 × 10⁻⁴  
-
-- **Control Variate**:  
-  - Estimate ≈ 5.76  
-  - 95% CI ≈ [5.7598, 5.7623]  
-  - Variance ≈ 4.3 × 10⁻⁷  
 
 - **Variance Reduction**: ~99.94% (≈ 1,600× improvement in efficiency)
 
